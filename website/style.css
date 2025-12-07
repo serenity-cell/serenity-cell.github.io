@@ -17,17 +17,6 @@ body {
 
 }
 
-.nav_title {
-    font-weight: bold;
-    position: absolute;
-    top: 90px; 
-    padding-left: 400px;
-    margin: 0 auto;
-    background: #14130e;
-    color: #bbb2a1; 
-    border: none;
-}
-
 .home {
     font-size: 24px;
     font-weight: bold;
@@ -67,6 +56,8 @@ body {
 
 .heading_block {
     border-bottom: 2px solid #D8CFBC;
+    position: relative;
+    padding: 3px 0;
 }
 
 .opener_image {
@@ -97,7 +88,7 @@ h1 {
     margin: 20px 0;
     border-bottom: 2px solid #D8CFBC;
     padding: 10Px;
-    max-width: 800px;
+    max-width: 900px;
     text-align: center;
     margin: auto;
 }
@@ -105,7 +96,7 @@ h1 {
 .main_p {
     font-size: 18px;
     line-height: 1.6;
-    max-width: 650px;
+    max-width: 800px;
     margin: 20px auto;
     text-align: left;
     padding: 2px 2px;
