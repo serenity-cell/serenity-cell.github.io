@@ -98,6 +98,14 @@ h1 {
     line-height: 1.6;
     max-width: 800px;
     margin: 20px auto;
-    text-align: left;
+    text-align: center;
     padding: 2px 2px;
+}
+
+.photography_img {
+    max-width:400px;
+    text-align: left; 
+    padding-right: 60%;
+    border: 5px solid #bbb2a1;
+
 }
