@@ -5,76 +5,49 @@
         transform: translateY(0); }
 
 }
-
+ 
 body {
     font-family: Arial, sans-serif;
     background: #14130e;
     color: #D8CFBC;
     text-align: center;
-    margin: 0;
     position: relative; 
-    animation: fade-slide-in 2s ease-out forwards;
-    animation-timeline: scroll();
-
+    animation: fade-slide-in 1.5s ease-in-out;
 }
 
-.nav{
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
     border-bottom: 2px solid #D8CFBC;
-    position: relative;
-    padding: 3px 0;
+    padding: 0 0px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo_img {
-    width: 130px;
-    height: 110px;
+    max-width: 130px;
+    max-height: 110px;
     aspect-ratio: auto;
-    padding: 5px;
-    display: block; 
-    text-align: left;
-
 }
 
-.home {
+.home, .hobbies, .projects {
     font-size: 24px;
     font-weight: bold;
-    position: absolute;
-    top: 80px; 
-    right: 230px;
     cursor: pointer;
-    color: #bbb2a1; 
+    color: #bbb2a1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: auto;
 }
 
-.home:hover{
+.home{
+    margin-left: auto;
+}
+
+.home:hover, .hobbies:hover, .projects:hover {
     color: #635745
 }
-
-.hobbies { 
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    top: 80px; 
-    right: 120px;
-    cursor: pointer;
-    color: #bbb2a1; 
-}
-
-.hobbies:hover{
-    color: #635745
-}
-
-.projects{
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    top: 80px; 
-    right: 10px;
-    cursor: pointer;
-    color: #bbb2a1; 
-}
-.projects:hover {
-    color: #635745
-}
-
 
 .opener_image {
     width: 100%;
@@ -85,22 +58,25 @@ body {
     border-left: 2px solid #D8CFBC;
     border-right: 2px solid #D8CFBC;
     background: transparent;
+
 }
 
 h1 {
     font-size: 36px;
     margin: 10px 0;
     padding: 3px;
+    
 }
 
 .header{
     font-weight: bold;
     margin: 20px 0;
     border-bottom: 2px solid #D8CFBC;
-    padding: 10Px;
+    padding: 10px;
     max-width: 900px;
     text-align: center;
     margin: auto;
+    
 }
 
 .main_p {
@@ -110,6 +86,7 @@ h1 {
     margin: 20px auto;
     text-align: center;
     padding: 2px 2px;
+    
 }
 
 .img_text_container {
@@ -128,6 +105,7 @@ h1 {
     flex-shrink: 0;
     border: 5px solid #bbb2a1;
     aspect-ratio: auto;
+    
 }
 
 .img_p_left {
@@ -135,6 +113,7 @@ h1 {
     font-size: 16px;
     text-align: left;
     line-height: 1.6;
+
 }
 
 .img_text_container_r {
@@ -146,6 +125,7 @@ h1 {
     padding: 0 20px;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+
 }
 
 .img_right {
@@ -153,6 +133,7 @@ h1 {
     flex-shrink: 0;
     border: 5px solid #bbb2a1;
     aspect-ratio: auto;
+    
 }
 
 .img_p_right {
@@ -160,5 +141,6 @@ h1 {
     font-size: 16px;
     text-align: right;
     line-height: 1.6;
+    
 
 }
