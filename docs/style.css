@@ -26,8 +26,8 @@ nav {
 }
 
 .logo_img {
-    max-width: 130px;
-    max-height: 110px;
+    max-width: 120px;
+    max-height: 100px;
     aspect-ratio: auto;
 }
 
@@ -39,6 +39,7 @@ nav {
     text-decoration: none;
     transition: color 0.3s ease;
     margin-top: auto;
+    margin-bottom: 20px;
 }
 
 .home{
@@ -46,7 +47,7 @@ nav {
 }
 
 .home:hover, .hobbies:hover, .projects:hover {
-    color: #635745
+    color: #635745;
 }
 
 .opener_image {
@@ -143,4 +144,9 @@ h1 {
     line-height: 1.6;
     
 
+}
+
+.in_progress {
+    border: 5px solid #bbb2a1;
+    margin-top: 50px;
 }
