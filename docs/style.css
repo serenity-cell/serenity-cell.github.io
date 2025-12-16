@@ -90,7 +90,7 @@ h1 {
     
 }
 
-.img_text_container {
+.img_text_container_r {
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -98,7 +98,8 @@ h1 {
     margin: 20px auto;
     padding: 0 20px;
     flex-wrap: wrap;
-    transition: 1.0s ease-in;
+    flex-direction: row-reverse;
+
 }
 
 .img_left {
@@ -117,20 +118,9 @@ h1 {
 
 }
 
-.img_text_container_r {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 20px;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-
-}
 
 .img_right {
-    width: 400px;
+    max-width: 400px;
     flex-shrink: 0;
     border: 5px solid #bbb2a1;
     aspect-ratio: auto;
@@ -149,4 +139,6 @@ h1 {
 .in_progress {
     border: 5px solid #bbb2a1;
     margin-top: 50px;
+    max-width: fit-content;
+    max-height: fit-content;
 }
