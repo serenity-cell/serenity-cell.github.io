@@ -53,7 +53,7 @@ nav {
 .opener_image {
     width: 100%;
     position: relative;
-    height: 350px;
+    max-height: 350px;
     object-fit: cover;
     border-bottom: 2px solid #D8CFBC;
     border-left: 2px solid #D8CFBC;
