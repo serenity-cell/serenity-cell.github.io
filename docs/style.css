@@ -146,6 +146,11 @@ h1 {
 
 }
 
+.sub_text {
+    visibility: hidden;
+    animation: fade-slide-in 1s ease-in-out 2s forwards;
+}
+
 
 .img_right {
     max-width: 400px;
