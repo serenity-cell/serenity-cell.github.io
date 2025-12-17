@@ -1,6 +1,6 @@
 @keyframes fade-slide-in {
         from { opacity: 0;
-        transform: translateY(-10vh); }
+        transform: translateY(-5vh); }
         to { opacity: 1;
         transform: translateY(0); 
         visibility: visible;
@@ -26,7 +26,7 @@ nav {
     width: 100%;
     box-sizing: border-box;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out forwards;
+    animation: fade-slide-in 1s ease-in-out forwards;
 }
 
 .logo_img {
@@ -59,12 +59,13 @@ nav {
     position: relative;
     max-height: 350px;
     object-fit: cover;
+    /* border-top: 2px solid #D8CFBC;
     border-bottom: 2px solid #D8CFBC;
     border-left: 2px solid #D8CFBC;
-    border-right: 2px solid #D8CFBC;
+    border-right: 2px solid #D8CFBC; */
     background: transparent;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out 0.5s forwards;
+    animation: fade-slide-in 1s ease-in-out 0.5s forwards;
 
 }
 
@@ -73,7 +74,7 @@ h1 {
     margin: 10px 0;
     padding: 3px;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out 1s forwards;
+    animation: fade-slide-in 1s ease-in-out 1s forwards;
     
 }
 
@@ -86,7 +87,7 @@ h1 {
     text-align: center;
     margin: auto;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out 1.5s forwards;
+    animation: fade-slide-in 1s ease-in-out 1.5s forwards;
     
 }
 
@@ -98,7 +99,7 @@ h1 {
     text-align: center;
     padding: 2px 2px;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out 2s forwards;
+    animation: fade-slide-in 1s ease-in-out 2s forwards;
     
 }
 
@@ -131,7 +132,7 @@ h1 {
     border: 5px solid #bbb2a1;
     aspect-ratio: auto;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out 1.5s forwards;
+    animation: fade-slide-in 1s ease-in-out 1.5s forwards;
     
 }
 
@@ -141,7 +142,7 @@ h1 {
     text-align: left;
     line-height: 1.6;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out 2s forwards;
+    animation: fade-slide-in 1s ease-in-out 2s forwards;
 
 }
 
@@ -152,7 +153,7 @@ h1 {
     border: 5px solid #bbb2a1;
     aspect-ratio: auto;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out 1.5s forwards;
+    animation: fade-slide-in 1s ease-in-out 1.5s forwards;
     
 }
 
@@ -162,7 +163,7 @@ h1 {
     text-align: right;
     line-height: 1.6;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out 2s forwards;
+    animation: fade-slide-in 1s ease-in-out 2s forwards;
     
 
 }
@@ -173,5 +174,5 @@ h1 {
     max-width: fit-content;
     max-height: fit-content;
     visibility: hidden;
-    animation: fade-slide-in 1.5s ease-in-out 0.5s forwards;
+    animation: fade-slide-in 1s ease-in-out 0.5s forwards;
 }
