@@ -9,7 +9,7 @@
 }
  
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif, Times New Roman;
     background: #14130e;
     color: #D8CFBC;
     text-align: center;
@@ -63,7 +63,6 @@ nav {
     border-bottom: 2px solid #D8CFBC;
     border-left: 2px solid #D8CFBC;
     border-right: 2px solid #D8CFBC; */
-    background: transparent;
     visibility: hidden;
     animation: fade-slide-in 1s ease-in-out 0.5s forwards;
 
@@ -93,6 +92,7 @@ h1 {
 
 .main_p {
     font-size: 18px;
+    font-family: Times;
     line-height: 1.6;
     max-width: 800px;
     margin: 20px auto;
@@ -176,8 +176,8 @@ h1 {
 .in_progress {
     border: 5px solid #bbb2a1;
     margin-top: 50px;
-    max-width: fit-content;
-    max-height: fit-content;
+    max-width: 100%;
+    max-height: 100%;
     visibility: hidden;
     animation: fade-slide-in 1s ease-in-out 0.5s forwards;
 }
