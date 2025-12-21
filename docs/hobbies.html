@@ -6,12 +6,13 @@
     <title>kairos shoots portfolio hobbies</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" as="style" href="style.css"> 
-    <link rel="icon" type="image/webp" href="images/res 9.webp">
+    <script src="script.js" defer></script>
+    <link rel="favicon" type="image/webp" href="images/res 9.webp">
 </head>
 
 <body> 
 
-    <nav>
+    <nav class="slide-in">
         <img src="images/Section 9.webp" srcset="images/res 9.webp 181w" alt="a picture of my logo" class="logo_img">
         <a href="index.html" class= "home" >About</a>
         <a href="hobbies.html" class= "hobbies" >Hobbies</a>
@@ -19,27 +20,24 @@
     </nav>
 
     <main>
-        <h1>My Hobbies</h1>
+        <h1 class="slide-in">My Hobbies</h1>
+        <div class="grid">
+            <div class="grid-item slide-in">
+                <p class="grid-text">Photography</p>
+                <p class="hover-text"> I love photography, but it is not something I spend my time on much which I'm sorry about because it means yall don't get to see many frequent posts</p>
+                <img src="images/IMG_1223.webp" srcset="images/res_1223.webp 467w" alt="a picture of my hobby">
+            </div>
+            <div class="grid-item slide-in">
+                <p class="grid-text">Coding</p>
+                <img src="images/Section 9.webp" srcset="images/res .webp 181w" alt="a picture of my hobby">
         
-        <p class="header"> now, I have a good amount of hobbies that I spend my time on whenever I got time for them, so lets start with the one some of yall probably know me most for.</p>
-        <h1>Photography</h1>
-        <div class = "container">
-            <img src="images/IMG_1223.webp" srcset="images/res_1223.webp 467w" alt="photo of a beautiful classic car" fetchpriority= "high" class="img_left">
-            <p class="img_p_left">This is the hobby I am most known for since most everyone I know, and even some of you guys, know that I do photography. Although it's the most public hobby in my life, it's not one I do often (I literally post once every couple months), yet I still love photography even if my camera gets neglected somewhat often. </p>
-            <p class="sub_text">right now (as of December 8, 2025), I have been trying to get a better lens than I do now, but I'm a brokie so I cant do that yet (I'm actually about to go to the streets and beg for cash)</p>
+            </div>
+            <div class="grid-item slide-in">
+                <p class="grid-text">Reading</p>
+                <img src="images/Section 12.webp" srcset="images/res 12.webp 181w" alt="a picture of my hobby">
+        
+            </div>
         </div>
-
-        <h1>Coding</h1>
-        <div class = "container_reverse">
-            <img src="images/IMG_3555.webp" srcset= "images/res_3555.webp 409w"alt="personal photo of electronic project"  fetchpriority= "high" class="img_right">
-            <p class="img_p_right">Now, coding is something I spend my time on the most. I enjoy writing and learning code, and I want to at some point get in a field that has something to do with code. Currently (as of December 8, 2025, again), I only know Python, HTML, and CSS. Now, I want to learn either C++ or JS and Java, because why not? Fun fact: the picture is the html code of this very website right before I wrote this paragraph</p>
-        </div>
-
-        <h1>Hobbyist Electronics</h1>
-        <div class = "container">
-            <img src="images/IMG_3554.webp" srcset="images/res_3554.webp 525w"alt="personal photo of electronic project" fetchpriority= "high" class="img_left">
-            <p class="img_p_left">Another hobby of mine is hobbyist electronics. I enjoy building small electronic projects that are either useful or just fun to make. I normally use a Raspberry Pi Pico and an ESP32/ESP32-C3 because they seem the most fun and versatile to use. The picture is of a small project I made that is a simple temperature and humidity sensor that displays the data on an LCD screen.</p>
-            <p class="sub_text"> (yes, the plants name is Gojo.)</p>
     </main> 
 
 </body>
