@@ -11,13 +11,12 @@
 .slide-in {
       opacity: 0;
       transform: translateY(-5vh);
-      transition: opacity 2s ease-out, transform 2s ease-out;
+      transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
 .slide-in.active {
-      opacity: 1;
+      opacity: 1; 
       transform: translateY(0);
-      visibility: visible; 
 }
  
 body {
@@ -101,6 +100,8 @@ h1 {
 
 .grid{
     display: grid;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 1.5rem;
     overflow: hidden;
@@ -167,16 +168,22 @@ h1 {
 
 /* mobile tap */
 @media (max-width: 768px) {
-    .grid-item.active img,
-    .grid-item.active, .grid-text {
+    .grid-item.clicked img,
+    .grid-item.clicked .grid-text {
         opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
     
-    .grid-item.active .hover-text {
+    .grid-item.clicked .hover-text {
         opacity: 1;
         visibility: visible;
         transition: opacity 0.5s ease-in-out;
     }
+    
+    .grid-item.clicked .tap-hint {
+        display: none;
+    }
+
 }
 
 @keyframes pulse {
@@ -195,11 +202,6 @@ h1 {
     font-weight: bold;
     animation: pulse 2s infinite;
     z-index: 10;
-}
-
-
-.grid-item.clicked .tap-hint {
-    display: none;
 }
 
 .in_progress {
