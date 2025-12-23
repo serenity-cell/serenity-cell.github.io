@@ -16,3 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 });
+
+document.querySelectorAll('.grid-item').forEach(item => {
+    item.addEventListener('click', function() {
+        any.classList.toggle('clicked');
+    });
+});
