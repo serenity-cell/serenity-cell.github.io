@@ -1,17 +1,7 @@
-@keyframes fade-slide-in {
-        from { opacity: 0;
-        transform: translateY(-5vh); }
-        to { opacity: 1;
-        transform: translateY(0); 
-        visibility: visible;
-    }
-
-}
-
 .slide-in {
       opacity: 0;
       transform: translateY(-5vh);
-      transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 .slide-in.active {
@@ -100,33 +90,49 @@ h1 {
 
 .grid{
     display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-    gap: 1.5rem;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    position: relative;
+    grid-template-columns: repeat(auto-fit, 300px);
+    padding: 10px 10px;
+    gap: 1rem;
+    justify-content: center; 
+    grid-auto-flow: dense;
     
 }
 
-.grid-item {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background: #2e2c23;
-    padding: 0 1rem;
+.grid-item-small,
+.grid-item-large {
+    background: #1d1c16;
+    padding: 1rem;
     border-radius: 1rem;
+    height: 350px;
     position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
-.grid-item img {
-    max-width: 100%;
-    max-height: 250px;
+.grid-item-small {
+    flex: 0 1 300px;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.grid-item-large {
+    flex: 1 1 100%;
+    width: 100%;
+}
+
+.grid-item-small img,
+.grid-item-large img{
+    width: 100%;
+    width: 100%;
+    height: 80%;
     border-radius: 1rem;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+
 }
 
 .grid-text {
@@ -136,54 +142,100 @@ h1 {
     opacity: 1;
 }
 
-.grid-item:hover {
+.grid-item-small:hover,
+.grid-item-large:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgb(29, 28, 28);
 }
 
 .hover-text{
     position: absolute;
     text-align: center;
     width: 90%;
-    background: #2e2c23;
     color: #D8CFBC;
     opacity: 0;
     visibility: hidden;
+    z-index: 11;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+/* large screens */
+@media (min-width: 1100px) {
+    .grid{
+        grid-template-columns: repeat(auto-fit, 300px);
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 }
 
+/* Medium screens */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .grid{
+        grid-template-columns: repeat(auto-fit, 300px);
+        margin: 0 auto;
+    }
+    
+    .grid-item-large {
+        grid-column: span 3;
+    }
+}
 
-/* computer hover */
 @media (min-width: 769px) {
-    .grid-item:hover img, 
-    .grid-item:hover .grid-text {
+    .tap-hint {
+        display: none;
+        visibility: hidden;
+    }
+
+    .grid-item-small:hover img, 
+    .grid-item-small:hover .grid-text,
+    .grid-item-large:hover img,
+    .grid-item-large:hover .grid-text {
         opacity: 0;
     }
     
-    .grid-item:hover .hover-text {
+    .grid-item-small:hover .hover-text,
+    .grid-item-large:hover .hover-text {
         opacity: 1;
         visibility: visible;
         transition: opacity 0.5s ease-in-out;
     }
 }
 
-/* mobile tap */
+/* mobile/tablet - cards stack */
 @media (max-width: 768px) {
-    .grid-item.clicked img,
-    .grid-item.clicked .grid-text {
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
+    .grid{
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
+        justify-items: center;
     }
     
-    .grid-item.clicked .hover-text {
+    .tap-hint {
+        display: block;
+    }
+    
+    .grid-item-small {
+        grid-column: span 1;
+        width: 100%;
+        max-width: 500px;
+        min-width: unset;
+    }
+    .grid-item-small.clicked img, 
+    .grid-item-small.clicked .grid-text,
+    .grid-item-large.clicked img,
+    .grid-item-large.clicked .grid-text { 
+        opacity: 0;
+    }
+    
+    .grid-item-small.clicked .hover-text,
+    .grid-item-large.clicked .hover-text {
         opacity: 1;
         visibility: visible;
         transition: opacity 0.5s ease-in-out;
     }
     
-    .grid-item.clicked .tap-hint {
+    .grid-item-small.clicked .tap-hint,
+    .grid-item-large.clicked .tap-hint {
         display: none;
     }
-
 }
 
 @keyframes pulse {

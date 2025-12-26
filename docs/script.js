@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.classList.add('active');
-                }, index * 500);
+                }, index * 400);
             }
         });
     }, {
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Mobile tap toggle
-    document.querySelectorAll('.grid-item').forEach(item => {
+    document.querySelectorAll('.grid-item-small, .grid-item-large').forEach(item => {
         item.addEventListener('click', function() {
             this.classList.toggle('clicked');
         });
