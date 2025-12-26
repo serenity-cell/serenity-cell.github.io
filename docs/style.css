@@ -133,6 +133,7 @@ h1 {
     object-fit: contain;
     object-position: center;
 
+
 }
 
 .grid-text {
@@ -140,6 +141,7 @@ h1 {
     margin: 10px 10px;
     color: #D8CFBC;
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .grid-item-small:hover,
@@ -190,13 +192,14 @@ h1 {
     .grid-item-large:hover img,
     .grid-item-large:hover .grid-text {
         opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
     
     .grid-item-small:hover .hover-text,
     .grid-item-large:hover .hover-text {
         opacity: 1;
         visibility: visible;
-        transition: opacity 0.5s ease-in-out;
+
     }
 }
 
@@ -223,13 +226,14 @@ h1 {
     .grid-item-large.clicked img,
     .grid-item-large.clicked .grid-text { 
         opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
     
     .grid-item-small.clicked .hover-text,
     .grid-item-large.clicked .hover-text {
         opacity: 1;
         visibility: visible;
-        transition: opacity 0.5s ease-in-out;
+
     }
     
     .grid-item-small.clicked .tap-hint,
