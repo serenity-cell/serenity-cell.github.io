@@ -160,26 +160,28 @@ h1 {
     z-index: 11;
     transition: opacity 0.5s ease-in-out, visibility 0.5s;
 }
+
 /* large screens */
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
     .grid{
-        grid-template-columns: repeat(auto-fit, 300px);
-        max-width: 1100px;
+        grid-template-columns: repeat(3, 300px);
+        max-width: 1300px;
         margin: 0 auto;
+    }
+
+    .grid-item-small {
+        grid-column: span 1;
+        width: 100%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+
+     .grid-item-large {
+        grid-column: span 2;
     }
 }
 
-/* Medium screens */
-@media (min-width: 769px) and (max-width: 1199px) {
-    .grid{
-        grid-template-columns: repeat(auto-fit, 300px);
-        margin: 0 auto;
-    }
-    
-    .grid-item-large {
-        grid-column: span 3;
-    }
-}
 
 @media (min-width: 769px) {
     .tap-hint {
@@ -221,6 +223,7 @@ h1 {
         max-width: 500px;
         min-width: unset;
     }
+
     .grid-item-small.clicked img, 
     .grid-item-small.clicked .grid-text,
     .grid-item-large.clicked img,
