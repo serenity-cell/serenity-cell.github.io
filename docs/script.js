@@ -34,3 +34,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+const wrapper = document.getElementById('spotifyWrapper');
+  const btn = document.getElementById('toggleBtn');
+
+  btn.addEventListener('click', () => {
+    wrapper.classList.toggle('hidden');
+    if (wrapper.classList.contains('hidden')) {
+      btn.innerHTML = '+'; 
+      btn.setAttribute('aria-label', 'Show player');
+    } else {
+      btn.innerHTML = '−'; 
+      btn.setAttribute('aria-label', 'Hide player');
+    }
+  });
+

@@ -18,16 +18,27 @@
 
   gtag('config', 'G-RDXBNKPGQR');
 </script>
-<body>
-    <nav class="island_nav slide-in">
-        <a href="index.html" class= "home" >About</a>
-        <a href="hobbies.html" class= "hobbies" >Hobbies</a>
-        <a href="projects.html" class= "projects">Projects</a>
-        <a href="blog.html" class= "blog"> Blog/Now</a>
-    </nav>
-    <main>
-        <h1> Coming Soon (sorry)</h1>
-        <img src="images/IMG_3824.webp" class="in_progress slide-in">
-    </main>
-</body>
+    <body>
+        <nav class="island_nav slide-in">
+            <a href="index.html" class= "home" >About</a>
+            <a href="hobbies.html" class= "hobbies" >Hobbies</a>
+            <a href="projects.html" class= "projects">Projects</a>
+            <a href="blog.html" class= "blog"> Blog/Now</a>
+        </nav>
+
+        <div class="spotify-player-wrapper" id="spotifyWrapper">
+            <div class="spotify-player-container">
+                <!-- Toggle Button -->
+                <button class="toggle-btn" id="toggleBtn" aria-label="Hide player">
+                <!-- Minus icon when visible; will change to + when hidden -->
+                </button>
+                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/11QG5zyuq6bCn4iHqcy5jv?utm_source=generator&theme=0" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        
+            </div>
+        </div>
+        <main>
+            <h1> Coming Soon (sorry)</h1>
+            <img src="images/IMG_3824.webp" class="in_progress slide-in">
+        </main>
+    </body>
 </html>
