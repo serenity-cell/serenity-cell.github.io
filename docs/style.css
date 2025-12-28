@@ -18,39 +18,37 @@ body {
     
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-bottom: 2px solid #D8CFBC;
-    padding: 0 0px;
-    width: 100%;
-    box-sizing: border-box;
+main{
+    padding-top: 100px;
 }
 
-.logo_img {
-    max-width: 120px;
-    max-height: 100px;
-    aspect-ratio: auto;
+.island_nav {
+    position: fixed;
+    height: 40px;
+    border-radius: 10px;
+    background: #1c1a14;
+    width: fit-content;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+
 }
 
 .home, .hobbies, .projects {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+    margin: 10px;
+    margin-top:auto;
+    margin-bottom: auto;
     font-weight: bold;
     cursor: pointer;
     color: #bbb2a1;
     text-decoration: none;
-    transition: color 0.3s ease;
-    margin-top: auto;
-    margin-bottom: 20px;
-}
-
-.home{
-    margin-left: auto;
+    transition: all 0.3s ease;
 }
 
 .home:hover, .hobbies:hover, .projects:hover {
     color: #635745;
+    transform: translateY(-0.7vh);
 }
 
 .opener_image {
@@ -101,7 +99,6 @@ h1 {
 .grid-item-small,
 .grid-item-large {
     background: #1d1c16;
-    padding: 1rem;
     border-radius: 1rem;
     height: 350px;
     position: relative;
@@ -125,7 +122,6 @@ h1 {
 .grid-item-small img,
 .grid-item-large img{
     width: 100%;
-    width: 100%;
     height: 80%;
     border-radius: 1rem;
     opacity: 1;
@@ -139,6 +135,7 @@ h1 {
 .grid-text {
     font-weight: bold;
     margin: 10px 10px;
+    text-align: center;
     color: #D8CFBC;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
@@ -152,7 +149,7 @@ h1 {
 
 .hover-text{
     position: absolute;
-    text-align: center;
+    left: 5%;
     width: 90%;
     color: #D8CFBC;
     opacity: 0;
@@ -162,10 +159,14 @@ h1 {
 }
 
 /* large screens */
-@media (min-width: 1000px) {
+@media (min-width: 950px) {
+    .island_nav{
+        margin-left: 50px
+    }
+    
     .grid{
         grid-template-columns: repeat(3, 300px);
-        max-width: 1300px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
@@ -180,10 +181,7 @@ h1 {
      .grid-item-large {
         grid-column: span 2;
     }
-}
 
-
-@media (min-width: 769px) {
     .tap-hint {
         display: none;
         visibility: hidden;
@@ -206,7 +204,11 @@ h1 {
 }
 
 /* mobile/tablet - cards stack */
-@media (max-width: 768px) {
+@media (max-width: 949px) {
+    .island_nav{
+        margin-left: 50px
+    }
+
     .grid{
         grid-template-columns: 1fr;
         padding: 10px 20px;
@@ -220,6 +222,12 @@ h1 {
     .grid-item-small {
         grid-column: span 1;
         width: 100%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .grid-item-large {
+        grid-column: span 1;
         max-width: 500px;
         min-width: unset;
     }
