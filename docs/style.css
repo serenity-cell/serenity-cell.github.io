@@ -192,7 +192,7 @@ h1 {
     .grid-item-large:hover img,
     .grid-item-large:hover .grid-text {
         opacity: 0;
-        transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out !important;
     }
     
     .grid-item-small:hover .hover-text,
@@ -237,7 +237,7 @@ h1 {
     .grid-item-large.clicked img,
     .grid-item-large.clicked .grid-text { 
         opacity: 0;
-        transition: opacity 0.5s ease-in-out;
+        transition: opacity 0.5s ease-in-out !important;
     }
     
     .grid-item-small.clicked .hover-text,
