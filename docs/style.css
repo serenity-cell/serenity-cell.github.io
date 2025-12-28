@@ -34,7 +34,7 @@ main{
 
 }
 
-.home, .hobbies, .projects {
+.home, .hobbies, .projects, .blog {
     font-size: 0.9rem;
     margin: 10px;
     margin-top:auto;
@@ -46,7 +46,7 @@ main{
     transition: all 0.3s ease;
 }
 
-.home:hover, .hobbies:hover, .projects:hover {
+.home:hover, .hobbies:hover, .projects:hover, .blog:hover {
     color: #635745;
     transform: translateY(-0.7vh);
 }
