@@ -159,7 +159,7 @@ h1 {
 }
 
 /* large screens */
-@media (min-width: 950px) {
+@media (min-width: 1000px) {
     .island_nav{
         margin-left: 50px
     }
@@ -204,7 +204,7 @@ h1 {
 }
 
 /* mobile/tablet - cards stack */
-@media (max-width: 949px) {
+@media (max-width: 999px) {
     .island_nav{
         margin-left: 50px
     }
@@ -232,14 +232,24 @@ h1 {
         min-width: unset;
     }
 
+    .grid-item-small img,
+    .grid-item-large img {
+        transition: opacity 0.5s ease-in-out !important;
+    }
+
+    .grid-item-small .grid-text,
+    .grid-item-large .grid-text {
+        transition: opacity 0.5s ease-in-out !important;
+    }
+
     .grid-item-small.clicked img, 
     .grid-item-small.clicked .grid-text,
     .grid-item-large.clicked img,
     .grid-item-large.clicked .grid-text { 
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out !important;
+        opacity: 0 !important;
+        visibility: hidden;
     }
-    
+
     .grid-item-small.clicked .hover-text,
     .grid-item-large.clicked .hover-text {
         opacity: 1;
