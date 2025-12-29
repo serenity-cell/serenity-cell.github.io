@@ -22,23 +22,24 @@
         <nav class="island_nav slide-in">
             <a href="index.html" class= "home" >About</a>
             <a href="hobbies.html" class= "hobbies" >Hobbies</a>
-            <a href="projects.html" class= "projects">Projects</a>
+            <a href="projects.html" class= "guestbook">Guestbook</a>
             <a href="blog.html" class= "blog"> Blog/Now</a>
         </nav>
 
-        <div class="spotify-player-wrapper" id="spotifyWrapper">
-            <div class="spotify-player-container">
-                <!-- Toggle Button -->
-                <button class="toggle-btn" id="toggleBtn" aria-label="Hide player">
-                <!-- Minus icon when visible; will change to + when hidden -->
-                </button>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/11QG5zyuq6bCn4iHqcy5jv?utm_source=generator&theme=0" width="40%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        
-            </div>
-        </div>
         <main>
-            <h1> Coming Soon (sorry)</h1>
-            <img src="images/IMG_3824.webp" class="in_progress slide-in">
+            <h1> Leave a note!!</h1>
+            <p class="main_p">feel free to drop a little greeting or thoughts about the website that ive been building while learning everything along the way and I hope you have enjoyed going through my little digital garden   </p>
+            <div id="cusdis_thread"
+                data-host="https://cusdis.com"
+                data-app-id="4e948d86-a157-4545-806d-ec7f090c5326"
+                data-page-id="guestbook"
+                data-page-url="{{ PAGE_URL }}"
+                data-page-title="guestbook"
+                data-theme="dark">
+                
+            </div>
+            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
         </main>
     </body>
 </html>
