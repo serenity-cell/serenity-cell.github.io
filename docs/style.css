@@ -93,20 +93,82 @@ u, em {
     color:#D8CFBC;
 }
 
-#cusdis_thread {
-  width: 100%;
-  min-height: 600px;  /* Adjust based on how many comments you expect; start high */
-  height: auto !important;
-  border: none;  /* Removes any default borders */
-  margin-bottom: 2rem;  /* Adds breathing room above the footer */
+/* Guestbook section - keeps things spacious and calm */
+.guestbook-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
 }
 
-/* Make sure the iframe inside Cusdis expands properly */
-#cusdis_thread iframe {
-  width: 100% !important;
-  height: 100% !important;
-  min-height: 600px !important;  /* Matches the parent */
+.guestbook-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d6d5d38c;          /* Adjust to your palette - soft muted tone */
+  text-align: center;
+}
+
+.intro-text {
+  text-align: center;
+  color: #d8cfbc98;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Form styling */
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-input,
+.form-textarea {
+  max-width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #d1d9e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color:#bbb2a1;
+  background-color: #1d1c16;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #635745;    /* Your soft blue accent? */
+  box-shadow: 0 0 0 3px rgba(167, 199, 231, 0.2);
+}
+
+.form-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  padding: 0.9rem 1.8rem;
+  background-color: #bbb2a1;
+  color: #14130e;
   border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #635745;
+}
+
+/* Hide honeypot from humans (bots might fill it) */
+.honeypot {
+  display: none;
+}
+
+/* Extra breathing room before footer */
+.guestbook-section {
+  margin-bottom: 4rem;     /* Prevents footer overlap/crowding */
 }
 
 

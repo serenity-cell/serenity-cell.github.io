@@ -27,19 +27,39 @@
         </nav>
 
         <main>
-            <h1> Leave a note!!</h1>
-            <p class="main_p">feel free to drop a little greeting or thoughts about the website that ive been building while learning everything along the way and I hope you have enjoyed going through my little digital garden   </p>
-            <div id="cusdis_thread"
-                data-host="https://cusdis.com"
-                data-app-id="4e948d86-a157-4545-806d-ec7f090c5326"
-                data-page-id="guestbook"
-                data-page-url="{{ PAGE_URL }}"
-                data-page-title="guestbook"
-                data-theme="dark">
-                
-            </div>
-            <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+            <h2>Leave a private note in my garden 🌿</h2>
+            <p class="intro-text">Your chance to drop a little greeting for me. I hope you enjoy my digital garden as much as I do developing it.</p>
 
+            <form action="https://formsubmit.co/kairosshootj.h@gmail.com" method="POST" class="note-form">
+                <input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Your name (optional)" 
+                    class="form-input"
+                    >
+
+                <textarea 
+                name="message" 
+                placeholder="Your message..." 
+                required 
+                class="form-textarea"
+                ></textarea>
+
+                <!-- Honeypot field to catch bots (hidden with CSS) -->
+                <input 
+                type="text" 
+                name="_honey" 
+                class="honeypot"
+                >
+
+                <!-- Hidden customizations -->
+                <input type="hidden" name="_subject" value="New note in my digital garden!">
+                <input type="hidden" name="_captcha" value="false"> <!-- Optional: disable if you want zero Google reCAPTCHA -->
+                <input type="hidden" name="_next" value="https://serenity-cell.github.io/#guestbook"> <!-- Or link to a thanks section -->
+
+                <button type="submit" class="submit-btn">Send Note</button>
+            </form>
+            </section>
         </main>
     </body>
 </html>
