@@ -18,6 +18,11 @@ body {
     
 }
 
+.error_title{
+    font-size: clamp(10rem, 40vw, 20rem);
+
+}
+
 main{
     padding-top: 100px;
 }
