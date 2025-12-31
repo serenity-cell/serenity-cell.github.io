@@ -246,6 +246,20 @@ u, em {
     z-index: 11;
     transition: opacity 0.5s ease-in-out, visibility 0.5s;
 }
+.blog-grid-title {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    bottom: 10%;
+    text-align:left;
+    left: 5%;
+}
+.blog-grid-date {
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    text-align: left;
+    opacity: 0.7;
+}
 
 /* large screens */
 @media (min-width: 1000px) {
@@ -278,8 +292,12 @@ u, em {
 
     .grid-item-small:hover img, 
     .grid-item-small:hover .grid-text,
+    .grid-item-small:hover .blog-grid-title,
+    .grid-item-small:hover .blog-grid-date,
     .grid-item-large:hover img,
-    .grid-item-large:hover .grid-text {
+    .grid-item-large:hover .grid-text,
+    .grid-item-large:hover .blog-grid-title,
+    .grid-item-large:hover .blog-grid-date{
         opacity: 0;
         transition: opacity 0.5s ease-in-out !important;
     }
@@ -318,21 +336,18 @@ u, em {
         min-width: unset;
     }
 
-    .grid-item-small img,
-    .grid-item-large img {
-        transition: opacity 0.5s ease-in-out !important;
-    }
-
-    .grid-item-small .grid-text,
-    .grid-item-large .grid-text {
-        transition: opacity 0.5s ease-in-out !important;
-    }
 
     .grid-item-small.clicked img, 
     .grid-item-small.clicked .grid-text,
+    .grid-item-small.clicked .blog-grid-title,
+    .grid-item-small.clicked .blog-grid-date,
     .grid-item-large.clicked img,
-    .grid-item-large.clicked .grid-text { 
+    .grid-item-large.clicked .grid-text,
+    .grid-item-large.clicked .blog-grid-title,
+    .grid-item-large.clicked .blog-grid-date{ 
         opacity: 0 !important;
+        transition: opacity 0.5s ease-in-out !important;
+
     }
 
     .grid-item-small.clicked .hover-text,
