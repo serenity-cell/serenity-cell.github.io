@@ -246,6 +246,7 @@ u, em {
     z-index: 11;
     transition: opacity 0.5s ease-in-out, visibility 0.5s;
 }
+
 .blog-grid-title {
     position: absolute;
     font-family: 'Times New Roman', Times, serif;
@@ -386,4 +387,19 @@ u, em {
     margin-top: 50px;
     max-width: 100%;
     max-height: 100%;
+}
+
+.socials_links {
+    width: 45px;
+    height: 40px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+#instagram_link {
+    width: 50px;
+    height: 40px;
+}
+.socials_links:hover {
+    transform: scale(1.2);
 }
